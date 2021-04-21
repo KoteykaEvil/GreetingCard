@@ -9,6 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import com.example.greetingcard.R
+import com.example.greetingcard.data.Repository
 import com.example.greetingcard.databinding.FragmentFirstBinding
 import com.example.greetingcard.util.toast
 
@@ -21,6 +22,7 @@ class FirstFragment : Fragment() , FieldsListener, BackgroundListener{
         super.onCreate(savedInstanceState)
         viewModel.fieldsListener = this
         viewModel.backgroundListener = this
+        viewModel.repository = context?.let { Repository(it) }
     }
 
     override fun onCreateView(
@@ -37,7 +39,6 @@ class FirstFragment : Fragment() , FieldsListener, BackgroundListener{
         binding.lifecycleOwner = viewLifecycleOwner
         viewModel.navigationEvent.observe(viewLifecycleOwner, ::navigate)
     }
-
 
     private fun navigate(direction: NavDirections){
         findNavController().navigate(direction)

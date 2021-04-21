@@ -4,6 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.navigation.NavDirections
 import com.example.greetingcard.R
+import com.example.greetingcard.data.Repository
+import com.example.greetingcard.data.UIData
 import com.example.greetingcard.ui.SingleLiveEvent
 
 class FirstFragmentViewModel : ViewModel() {
@@ -11,6 +13,8 @@ class FirstFragmentViewModel : ViewModel() {
     var name: String? = null
     var title: String? = null
     var text: String? = null
+
+    var repository: Repository? = null
 
     var fieldsListener: FieldsListener? = null
     var backgroundListener: BackgroundListener? = null
@@ -25,7 +29,7 @@ class FirstFragmentViewModel : ViewModel() {
         if (name.isNullOrEmpty() || title.isNullOrEmpty() || text.isNullOrEmpty()) {
             fieldsListener?.onError("Заполни все поля")
         } else {
-            //saveToSharedPrefs(name, title, text, bgCounter)
+            repository?.saveToSharedPrefs(UIData(name!!, title!!, text!!, bgList[bgCounter],1))
             showSecondScreen()
         }
     }
@@ -34,7 +38,7 @@ class FirstFragmentViewModel : ViewModel() {
         if (name.isNullOrEmpty() || title.isNullOrEmpty() || text.isNullOrEmpty()) {
             fieldsListener?.onError("Заполни все поля")
         } else {
-            //saveToSharedPrefs(name, title, text, bgCounter)
+            repository?.saveToSharedPrefs(UIData(name!!, title!!, text!!, bgList[bgCounter],1))
             showSecondScreen()
         }
     }
@@ -42,8 +46,7 @@ class FirstFragmentViewModel : ViewModel() {
     fun onBackgroundClick() {
         bgCounter++
         if (bgCounter >= bgList.size) bgCounter = 0
-        val res = bgList[bgCounter]
-        backgroundListener?.onChangeBg(res)
+        backgroundListener?.onChangeBg(bgList[bgCounter])
         //fieldsListener?.onError("Ты нажал на фон, круто")
     }
 
