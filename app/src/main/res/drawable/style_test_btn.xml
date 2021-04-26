@@ -7,12 +7,12 @@
         <shape android:shape="rectangle">
             <gradient
                 android:angle="0"
-                android:endColor="#331c7f"
-                android:startColor="#0788ee" />
-            <corners android:radius="70dp" />
+                android:endColor="@color/setting_btn_end_gradient"
+                android:startColor="@color/setting_btn_start_gradient" />
+            <corners android:radius="@dimen/setting_btn_corner" />
             <stroke
-                android:width="3dp"
-                android:color="#FF0099FF" />
+                android:width="@dimen/setting_btn_stroke"
+                android:color="@color/setting_btn_stroke_color" />
         </shape>
     </item>
 
@@ -21,12 +21,12 @@
         <shape android:shape="rectangle">
             <gradient
                 android:angle="0"
-                android:endColor="#331c7f"
-                android:startColor="#0788ee" />
-            <corners android:radius="70dp" />
+                android:endColor="@color/setting_btn_end_gradient"
+                android:startColor="@color/setting_btn_start_gradient" />
+            <corners android:radius="@dimen/setting_btn_corner" />
             <stroke
-                android:width="3dp"
-                android:color="#FF0099FF" />
+                android:width="@dimen/setting_btn_stroke"
+                android:color="@color/setting_btn_stroke_color" />
         </shape>
     </item>
 
@@ -35,12 +35,12 @@
         <shape android:shape="rectangle">
             <gradient
                 android:angle="0"
-                android:endColor="#331C7F"
-                android:startColor="#0788EE" />
+                android:endColor="@color/setting_btn_end_gradient"
+                android:startColor="@color/setting_btn_start_gradient" />
             <stroke
-                android:width="3dp"
-                android:color="#FF0099FF" />
-            <corners android:radius="70dp" />
+                android:width="@dimen/setting_btn_stroke"
+                android:color="@color/setting_btn_stroke_color" />
+            <corners android:radius="@dimen/setting_btn_corner" />
         </shape>
     </item>
 
@@ -48,12 +48,12 @@
         <shape android:shape="rectangle">
             <gradient
                 android:angle="0"
-                android:endColor="#0E831A"
-                android:startColor="#11BE28" />
+                android:endColor="@color/setting_start_btn_end_gradient"
+                android:startColor="@color/setting_start_btn_start_gradient" />
             <stroke
-                android:width="3dp"
-                android:color="#04FF00" />
-            <corners android:radius="70dp" />
+                android:width="@dimen/setting_btn_stroke"
+                android:color="@color/setting_start_btn_stroke" />
+            <corners android:radius="@dimen/setting_btn_corner" />
         </shape>
     </item>
 

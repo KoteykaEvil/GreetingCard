@@ -1,4 +1,4 @@
-package com.example.greetingcard.ui
+package com.example.greetingcard.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

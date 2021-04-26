@@ -4,4 +4,7 @@
     <string name="name">Name:</string>
     <string name="title">Title:</string>
     <string name="text">Text:</string>
+    <string name="setting_btn_test">Test</string>
+    <string name="setting_btn_launch">Launch</string>
+    <string name="anim_text_view_from">FROM</string>
 </resources>

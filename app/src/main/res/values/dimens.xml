@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="setting_btn_corner">70dp</dimen>
+    <dimen name="setting_btn_stroke">3dp</dimen>
+    <dimen name="setting_text_edit_stroke">2dp</dimen>
+    <dimen name="setting_text_edit_corners">2dp</dimen>
+</resources>

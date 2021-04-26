@@ -7,4 +7,21 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#C0C0C0</color>
+    <color name="dark_gray">#4d4d4d</color>
+
+    <color name="arrow_color">#6666FF</color>
+
+    <color name="setting_btn_start_gradient">#0788ee</color>
+    <color name="setting_btn_end_gradient">#331c7f</color>
+    <color name="setting_btn_stroke_color">#FF0099FF</color>
+
+    <color name="setting_start_btn_start_gradient">#11BE28</color>
+    <color name="setting_start_btn_end_gradient">#0E831A</color>
+    <color name="setting_start_btn_stroke">#04FF00</color>
+
+    <color name="setting_launch_btn_start_gradient">#FF0000</color>
+    <color name="setting_launch_btn_end_gradient">#FF0000</color>
+    <color name="setting_launch_btn_stroke_color">#FFC800</color>
+
 </resources>

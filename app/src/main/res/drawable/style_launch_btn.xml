@@ -3,33 +3,33 @@
 
     <item android:state_hovered="true">
         <shape android:shape="rectangle">
-            <gradient android:angle="0" android:endColor="#331c7f" android:startColor="#0788ee" />
-            <corners android:radius="70dp"/>
-            <stroke android:width="3dp" android:color="#FF0099FF" />
+            <gradient android:angle="0" android:endColor="@color/setting_btn_end_gradient" android:startColor="@color/setting_btn_start_gradient" />
+            <corners android:radius="@dimen/setting_btn_corner"/>
+            <stroke android:width="@dimen/setting_btn_stroke" android:color="@color/setting_btn_stroke_color" />
         </shape>
     </item>
 
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <gradient android:angle="0" android:endColor="#331c7f" android:startColor="#0788ee" />
-            <corners android:radius="70dp"/>
-            <stroke android:width="3dp" android:color="#FF0099FF" />
+            <gradient android:angle="0" android:endColor="@color/setting_btn_end_gradient" android:startColor="@color/setting_btn_start_gradient" />
+            <corners android:radius="@dimen/setting_btn_corner"/>
+            <stroke android:width="@dimen/setting_btn_stroke" android:color="@color/setting_btn_stroke_color" />
         </shape>
     </item>
 
     <item android:state_focused="true">
         <shape android:shape="rectangle">
-            <gradient android:angle="0" android:endColor="#331C7F" android:startColor="#0788EE" />
-            <stroke android:width="3dp" android:color="#FF0099FF" />
-            <corners android:radius="70dp" />
+            <gradient android:angle="0" android:endColor="@color/setting_btn_end_gradient" android:startColor="@color/setting_btn_start_gradient" />
+            <stroke android:width="@dimen/setting_btn_stroke" android:color="@color/setting_btn_stroke_color" />
+            <corners android:radius="@dimen/setting_btn_corner" />
         </shape>
     </item>
 
     <item>
         <shape android:shape="rectangle">
-            <gradient android:angle="0" android:endColor="#FF0000" android:startColor="#FF0000" />
-            <stroke android:width="3dp" android:color="#FFC800" />
-            <corners android:radius="70dp" />
+            <gradient android:angle="0" android:endColor="@color/setting_launch_btn_end_gradient" android:startColor="@color/setting_launch_btn_start_gradient" />
+            <stroke android:width="@dimen/setting_btn_stroke" android:color="@color/setting_launch_btn_stroke_color" />
+            <corners android:radius="@dimen/setting_btn_corner" />
         </shape>
     </item>
 

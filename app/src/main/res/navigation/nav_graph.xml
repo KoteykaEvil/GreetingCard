@@ -7,16 +7,16 @@
 
  <fragment
      android:id="@+id/firstFragment"
-     android:name="com.example.greetingcard.ui.firstwindow.FirstFragment"
+     android:name="com.example.greetingcard.ui.firstwindow.SettingFragment"
      android:label="fragment_first"
-     tools:layout="@layout/fragment_first" >
+     tools:layout="@layout/fragment_setting" >
   <action
       android:id="@+id/action_firstFragment_to_secondFragment"
       app:destination="@id/secondFragment" />
  </fragment>
  <fragment
      android:id="@+id/secondFragment"
-     android:name="com.example.greetingcard.ui.secondwindow.SecondFragment"
+     android:name="com.example.greetingcard.ui.secondwindow.AnimationFragment"
      android:label="fragment_second"
-     tools:layout="@layout/fragment_second" />
+     tools:layout="@layout/fragment_animation" />
 </navigation>
